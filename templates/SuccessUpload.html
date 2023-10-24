@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>File Upload Success</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            text-align: center;
+        }
+
+        .container {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 20px auto;
+            width: 400px;
+        }
+
+        h1 {
+            color: #007BFF;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 5px 0;
+        }
+
+        .back-button {
+            display: inline-block;
+            margin-top: 20px;
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .back-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>File Upload Successful</h1>
+        <a class="back-button" href="{% url 'upload' %}">Upload another file</a>
+    </div>
+</body>
+</html>

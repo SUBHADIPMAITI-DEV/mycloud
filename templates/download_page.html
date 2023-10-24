@@ -1,0 +1,17 @@
+<!-- templates/download_page.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Download Page</title>
+</head>
+<body>
+    <h1>Download Page</h1>
+    <ul>
+        {% for file in files %}
+            <li>
+                <a href="{% url 'download_file' file.name %}">{{ file.name }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
